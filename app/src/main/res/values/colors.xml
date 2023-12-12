@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Voilet1">#FFBBB6FC</color>
+    <color name="Blue">#FF6200EE</color>
+    <color name="Blue2">#FF3700B3</color>
+    <color name="Green">#FF03DAC5</color>
+    <color name="Blue3">#3262C4</color>
+    <color name="Black2">#000000</color>
+    <color name="White2">#FFFFFF</color>
+    <color name="Red">#C11515</color>
+    <color name="DarkPurple">#FF210642</color>
+    <color name="yellow">#fff777</color>
+    <color name="teal_200">#80CBC4</color>
+
+
+
+</resources>
