@@ -8,17 +8,22 @@
     tools:context=".HomeActivity">
 
     <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
 
-        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
         android:columnCount="2"
         android:rowCount="3">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardLabTest"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="140dp"
+            android:layout_height="110dp"
             android:layout_row="0"
             android:layout_rowWeight="1"
             android:layout_column="0"
@@ -37,8 +42,8 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="145dp"
-                    android:layout_height="133dp"
+                    android:layout_width="99dp"
+                    android:layout_height="81dp"
                     android:layout_row="1"
                     android:layout_column="0"
                     android:src="@drawable/img_23" />
@@ -58,8 +63,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardBuyMedicine"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="80dp"
+            android:layout_height="90dp"
             android:layout_row="0"
             android:layout_rowWeight="1"
             android:layout_column="1"
@@ -78,11 +83,12 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="145dp"
-                    android:layout_height="133dp"
+                    android:layout_width="107dp"
+                    android:layout_height="81dp"
                     android:layout_row="1"
                     android:layout_column="0"
                     android:src="@drawable/img_24" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -97,8 +103,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardFindDoctor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
             android:layout_row="1"
             android:layout_rowWeight="1"
             android:layout_column="0"
@@ -117,8 +123,8 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="145dp"
-                    android:layout_height="133dp"
+                    android:layout_width="128dp"
+                    android:layout_height="118dp"
                     android:layout_row="1"
                     android:layout_column="0"
                     android:src="@drawable/img_19" />
@@ -137,8 +143,8 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardHealthDoctor"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="148dp"
+            android:layout_height="181dp"
             android:layout_row="1"
             android:layout_rowWeight="1"
             android:layout_column="1"
@@ -157,8 +163,8 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="145dp"
-                    android:layout_height="133dp"
+                    android:layout_width="137dp"
+                    android:layout_height="113dp"
                     android:layout_row="1"
                     android:layout_column="0"
                     android:src="@drawable/img_25" />
@@ -256,6 +262,73 @@
 
 
     </GridLayout>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="251dp"
+        android:layout_height="317dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginLeft="@dimen/_1sdp"
+
+
+        android:layout_marginTop="@dimen/_320sdp"
+        android:layout_marginEnd="247dp"
+        android:layout_marginRight="247dp"
+        app:srcCompat="@drawable/img_27" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="153dp"
+        android:layout_height="155dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginStart="250dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="@dimen/_420sdp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        app:srcCompat="@drawable/img_28" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+
+
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginStart="-4dp"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginTop="@dimen/_460sdp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginRight="250dp"
+        app:srcCompat="@drawable/img_26" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="145dp"
+        android:layout_height="113dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+
+
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginStart="257dp"
+        android:layout_marginLeft="257dp"
+        android:layout_marginTop="@dimen/_460sdp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        app:srcCompat="@drawable/img_26" />
 
 
 </RelativeLayout>

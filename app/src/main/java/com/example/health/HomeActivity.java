@@ -32,19 +32,19 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this,LoginActivity.class));
             }
         });
-        CardView findDoctor = findViewById(R.id.cardFindDoctor);
-        findDoctor.setOnClickListener(new View.OnClickListener() {
+        CardView Brain_Teasure = findViewById(R.id.cardFindDoctor);
+        Brain_Teasure.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //startActivities(new Intent[]{new Intent(HomeActivity.this, FindDoctorActivity.class)});
                 startActivity(new Intent(HomeActivity.this, Brain_Teasure.class));
             }
         });
-        CardView labtest = findViewById(R.id.cardLabTest);
-        labtest.setOnClickListener(new View.OnClickListener() {
+        CardView SRT = findViewById(R.id.cardLabTest);
+        SRT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this,LabTestActivity.class));
+                startActivity(new Intent(HomeActivity.this,SRT_Quizes.class));
             }
         });
         CardView orderDetails = findViewById(R.id.cardOrderDetails);
@@ -58,7 +58,7 @@ public class HomeActivity extends AppCompatActivity {
         buyMedicine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this,BuyMedicineActivity.class));
+                startActivity(new Intent(HomeActivity.this,Performance_Chart.class));
             }
         });
     }

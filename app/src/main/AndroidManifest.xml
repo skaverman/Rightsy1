@@ -19,7 +19,7 @@
             android:name=".CartBuyMedicineActivity"
             android:exported="false" />
         <activity
-            android:name=".BuyMedicineDetailActivity"
+            android:name=".Weekly_Analysis"
             android:exported="false" />
         <activity
             android:name=".BuyMedicineActivity"

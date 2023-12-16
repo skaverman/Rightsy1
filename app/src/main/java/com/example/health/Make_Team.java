@@ -16,7 +16,7 @@ import android.widget.TimePicker;
 
 import java.util.Calendar;
 
-public class BookAppointmentActivity extends AppCompatActivity {
+public class Make_Team extends AppCompatActivity {
 
     EditText ed1,ed2,ed3,ed4;
     TextView tv;
@@ -33,7 +33,7 @@ public class BookAppointmentActivity extends AppCompatActivity {
         ed1 = findViewById(R.id.editTextAppFull);
         ed2 = findViewById(R.id.editTextAppAddress);
         ed3= findViewById(R.id.editTextAppContactNumber);
-        ed4= findViewById(R.id.editTextAppFees);
+
         dateButton = findViewById(R.id.buttonCartDate);
         timeButton = findViewById(R.id.buttonCartTime);
         btnBack = findViewById(R.id.buttonCartBack);
@@ -42,20 +42,20 @@ public class BookAppointmentActivity extends AppCompatActivity {
         ed1.setKeyListener(null);
         ed2.setKeyListener(null);
         ed3.setKeyListener(null);
-        ed4.setKeyListener(null);
+
 
         Intent it = getIntent();
         String title = it.getStringExtra("text1");
         String fullname = it.getStringExtra("text2");
         String address = it.getStringExtra("text3");
         String contact = it.getStringExtra("text4");
-        String fees = it.getStringExtra("text5");
+
 
         tv.setText(title);
         ed1.setText(fullname);
         ed2.setText(address);
         ed3.setText(contact);
-        ed4.setText("Cons Fees :" + fees + "/-");
+
 
         initDatePicker();
         dateButton.setOnClickListener(new View.OnClickListener() {
@@ -75,7 +75,7 @@ public class BookAppointmentActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(BookAppointmentActivity.this, Brain_Teasure.class));
+                startActivity(new Intent(Make_Team.this, Brain_Teasure.class));
             }
         });
 

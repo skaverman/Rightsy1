@@ -1,104 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_selector"
-    tools:context=".LabTestDetailActivity">
+    tools:context=".LabTestDetailActivity"
+    tools:ignore="ExtraText">
 
 
-    <TextView
-        android:id="@+id/textView_logo4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="24*7 CARE"
-        android:textColor="@color/Voilet1"
-        android:textSize="35sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView_logo6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Deliver Location : Pune"
-        android:textColor="@color/White2"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/textView_logo4"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/textView_logo4"
-        app:layout_constraintTop_toBottomOf="@+id/textView_logo4" />
+    <RelativeLayout
 
-    <TextView
-        android:id="@+id/textViewLDPackageName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Lab Test and Package"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="@dimen/_170sdp"
+        android:layout_height="@dimen/_170sdp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="UselessParent">
 
-        android:textColor="@color/yellow"
-        android:textSize="22dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView_logo6"
-        app:layout_constraintStart_toStartOf="@+id/textView_logo6"
-        app:layout_constraintTop_toBottomOf="@+id/textView_logo6" />
 
-    <TextView
-        android:id="@+id/textViewLBCostTotal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:text="TextView"
-        android:textColor="@color/yellow"
-        android:textColorHighlight="@color/yellow"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLDMultiLine" />
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="15/20"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_22sdp" />
 
-    <EditText
-        android:id="@+id/editTextLDMultiLine"
-        android:layout_width="292dp"
-        android:layout_height="373dp"
-        android:layout_marginTop="22dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:text="Hi \n\n Hello"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLDPackageName" />
+    </RelativeLayout >
 
     <Button
         android:id="@+id/buttonLDAddToCart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="670dp"
+        android:layout_marginRight="20dp"
         android:text="Add To Cart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLBCostTotal" />
+        tools:layout_editor_absoluteY="604dp" />
 
     <Button
         android:id="@+id/buttonLDBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="620dp"
+        android:layout_marginRight="20dp"
         android:text="BACK"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonLDAddToCart" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="214dp"
+        android:layout_height="271dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginRight="107dp"
+        app:srcCompat="@drawable/img_29" />
+</RelativeLayout >

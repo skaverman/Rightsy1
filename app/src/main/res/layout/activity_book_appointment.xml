@@ -12,10 +12,11 @@
         android:id="@+id/textViewCartPackageName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Book Appointment"
+        android:text="Make Team"
         android:textColor="@color/White2"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="114dp" />
 
     <EditText
@@ -49,7 +50,7 @@
         android:drawableLeft="@drawable/ic_baseline_email_24"
         android:drawablePadding="10dp"
         android:ems="13"
-        android:hint="Address"
+        android:hint="Email"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:paddingLeft="20dp"
@@ -85,35 +86,12 @@
         app:layout_constraintStart_toStartOf="@+id/editTextAppAddress"
         app:layout_constraintTop_toBottomOf="@+id/editTextAppAddress" />
 
-    <EditText
-        android:id="@+id/editTextAppFees"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/input_bg"
-        android:drawableLeft="@drawable/ic_currency_rupee_24"
-        android:drawablePadding="2dp"
-        android:ems="13"
-        android:hint="Fees"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:paddingLeft="20dp"
-        android:paddingTop="10dp"
-        android:paddingRight="10dp"
-        android:paddingBottom="10dp"
-        android:textColor="@color/White2"
-        android:textColorHint="@color/White2"
-        app:layout_constraintEnd_toEndOf="@+id/editTextAppContactNumber"
-        app:layout_constraintStart_toStartOf="@+id/editTextAppContactNumber"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAppContactNumber" />
-
     <Button
         android:id="@+id/buttonCheckout"
         android:layout_width="200dp"
         android:layout_height="48dp"
         android:layout_marginStart="106dp"
         android:layout_marginLeft="106dp"
-        android:layout_marginTop="160dp"
         android:layout_marginEnd="105dp"
         android:layout_marginRight="105dp"
         android:background="@drawable/btn_bg"
@@ -121,8 +99,9 @@
         android:textColorLink="#D66565"
         app:backgroundTint="#1ecbe1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAppFees" />
+        tools:layout_editor_absoluteY="600dp" />
 
     <Button
         android:id="@+id/buttonCartBack"
@@ -165,22 +144,20 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
-        android:layout_marginTop="32dp"
         android:text="Select Date"
         android:textColor="@color/yellow"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAppFees" />
+        tools:layout_editor_absoluteY="496dp" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="34dp"
         android:layout_marginRight="34dp"
         android:text="Select Time"
         android:textColor="@color/yellow"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextAppFees" />
+        tools:layout_editor_absoluteY="496dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

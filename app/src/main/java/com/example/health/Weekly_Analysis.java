@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class BuyMedicineDetailActivity extends AppCompatActivity {
+public class Weekly_Analysis extends AppCompatActivity {
 
     TextView tvPackageName, tvTotalCost;
     EditText edDetails;
@@ -37,7 +37,7 @@ public class BuyMedicineDetailActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(BuyMedicineDetailActivity.this,BuyMedicineActivity.class));
+                startActivity(new Intent(Weekly_Analysis.this,Performance_Chart.class));
             }
         });
         btnAddToCart.setOnClickListener(new View.OnClickListener() {
@@ -56,7 +56,7 @@ public class BuyMedicineDetailActivity extends AppCompatActivity {
                 }else{
                     db.addCart(username,product,price,"medicine");
                     Toast.makeText(getApplicationContext(), "Record Inserted to cart", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(BuyMedicineDetailActivity.this,BuyMedicineActivity.class));
+                    startActivity(new Intent(Weekly_Analysis.this,Performance_Chart.class));
                 }
             }
         });

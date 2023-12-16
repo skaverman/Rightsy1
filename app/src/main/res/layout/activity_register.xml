@@ -8,6 +8,14 @@
     tools:context=".RegisterActivity">
 
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="217dp"
+        android:layout_height="149dp"
+        app:srcCompat="@drawable/img_26"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="4dp" />
+
     <TextView
         android:id="@+id/textViewCartPackageName"
         android:layout_width="wrap_content"
@@ -95,7 +103,7 @@
         android:layout_marginTop="30dp"
         android:background="@drawable/input_bg"
         android:drawableLeft="@drawable/ic_baseline_security_24"
-        android:drawablePadding="2dp"
+        android:drawablePadding="8dp"
         android:ems="13"
         android:hint="Confirm-Password"
         android:inputType="textPassword"
@@ -114,12 +122,13 @@
         android:id="@+id/buttonCheckout"
         android:layout_width="148dp"
         android:layout_height="48dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/btn_bg"
         android:text="Register"
         android:textColorLink="#D66565"
         app:backgroundTint="#04b4fb"
         app:layout_constraintEnd_toEndOf="@+id/editTextAppFees"
+        app:layout_constraintHorizontal_bias="0.553"
         app:layout_constraintStart_toStartOf="@+id/editTextAppFees"
         app:layout_constraintTop_toBottomOf="@+id/editTextAppFees" />
 
@@ -128,8 +137,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Already Have an Account"
-        android:textColor="@color/White2"
+        android:text="Already Have an Account! Login"
+        android:textColor="#f84f07"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/buttonCheckout"
         app:layout_constraintStart_toStartOf="@+id/buttonCheckout"
         app:layout_constraintTop_toBottomOf="@+id/buttonCheckout" />
@@ -138,22 +149,23 @@
         android:id="@+id/imageView2"
         android:layout_width="338dp"
         android:layout_height="144dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="64dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintHorizontal_bias="0.219"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_10" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="175dp"
-        android:layout_height="201dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="174dp"
+        android:layout_height="206dp"
+        android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_6" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
