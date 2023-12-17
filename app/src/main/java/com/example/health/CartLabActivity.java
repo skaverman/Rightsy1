@@ -88,7 +88,7 @@ public class CartLabActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(CartLabActivity.this,LabTestActivity.class));
+                startActivity(new Intent(CartLabActivity.this,LabTestDetailActivity.class));
             }
         });
         btnCheckout.setOnClickListener(new View.OnClickListener() {

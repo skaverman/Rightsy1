@@ -27,7 +27,7 @@ public class Brain_Teasure extends AppCompatActivity {
         detective_brain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Brain_Teasure.this, DoctorDetailsActivity.class);
+                Intent it = new Intent(Brain_Teasure.this, DetectiveWeb.class);
                 it.putExtra("title", "Family Physician");
                 startActivity(it);
             }
@@ -36,7 +36,7 @@ public class Brain_Teasure extends AppCompatActivity {
         zumble_words.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Brain_Teasure.this, DoctorDetailsActivity.class);
+                Intent it = new Intent(Brain_Teasure.this, ZumbleWordsActivity2.class);
                 it.putExtra("title", "zumble_words");
                 startActivity(it);
             }
@@ -45,7 +45,7 @@ public class Brain_Teasure extends AppCompatActivity {
         suduko.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Brain_Teasure.this, DoctorDetailsActivity.class);
+                Intent it = new Intent(Brain_Teasure.this, SudkhoActivity.class);
                 it.putExtra("title", "suduko");
                 startActivity(it);
             }
@@ -54,7 +54,7 @@ public class Brain_Teasure extends AppCompatActivity {
         make_team.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Brain_Teasure.this, DoctorDetailsActivity.class);
+                Intent it = new Intent(Brain_Teasure.this, Make_Team.class);
                 it.putExtra("title", "Surgeon");
                 startActivity(it);
             }
@@ -63,7 +63,7 @@ public class Brain_Teasure extends AppCompatActivity {
         missing_number.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(Brain_Teasure.this, DoctorDetailsActivity.class);
+                Intent it = new Intent(Brain_Teasure.this, MissingActivity2.class);
                 it.putExtra("title", "Cardiologist");
                 startActivity(it);
             }

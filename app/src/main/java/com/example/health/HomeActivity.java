@@ -43,19 +43,20 @@ public class HomeActivity extends AppCompatActivity {
         CardView SRT = findViewById(R.id.cardLabTest);
         SRT.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this,SRT_Quizes.class));
+            public void onClick(View view) {
+                Intent it = new Intent(HomeActivity.this, SRT_Quizes.class);
+                startActivity(it);
             }
         });
-        CardView orderDetails = findViewById(R.id.cardOrderDetails);
-        orderDetails.setOnClickListener(new View.OnClickListener() {
+        CardView car_Race = findViewById(R.id.cardOrderDetails);
+        car_Race.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this,OrderDetailsActivity.class));
+                startActivity(new Intent(HomeActivity.this,Car_Web.class));
             }
         });
-        CardView buyMedicine = findViewById(R.id.cardBuyMedicine);
-        buyMedicine.setOnClickListener(new View.OnClickListener() {
+        CardView weekly_Quiz = findViewById(R.id.cardBuyMedicine);
+        weekly_Quiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this,Performance_Chart.class));

@@ -22,9 +22,9 @@ public class LabTestDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab_test_detail);
 
-        tvPackageName = findViewById(R.id.textViewLDPackageName);
-        tvTotalCost = findViewById(R.id.textViewLBCostTotal);
-        edDetails = findViewById(R.id.editTextLDMultiLine);
+       // tvPackageName = findViewById(R.id.textViewLDPackageName);
+       // tvTotalCost = findViewById(R.id.textViewLBCostTotal);
+      //  edDetails = findViewById(R.id.editTextLDMultiLine);
 
         btnBack = findViewById(R.id.buttonLDBack);
         btnAddToCart = findViewById(R.id.buttonLDAddToCart);
@@ -39,7 +39,7 @@ public class LabTestDetailActivity extends AppCompatActivity {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LabTestDetailActivity.this,LabTestActivity.class));
+                startActivity(new Intent(LabTestDetailActivity.this,LabTextBookActivity.class));
             }
         });
         btnAddToCart.setOnClickListener(new View.OnClickListener() {
@@ -58,7 +58,7 @@ public class LabTestDetailActivity extends AppCompatActivity {
                 }else{
                     db.addCart(username,product,price,"lab");
                     Toast.makeText(getApplicationContext(), "Record Inserted to cart", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(LabTestDetailActivity.this,LabTestActivity.class));
+                    startActivity(new Intent(LabTestDetailActivity.this,LabTextBookActivity.class));
                 }
             }
         });
