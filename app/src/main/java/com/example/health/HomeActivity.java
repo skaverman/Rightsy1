@@ -59,7 +59,7 @@ public class HomeActivity extends AppCompatActivity {
         weekly_Quiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this,Performance_Chart.class));
+                startActivity(new Intent(HomeActivity.this,QuizActivity.class));
             }
         });
     }
