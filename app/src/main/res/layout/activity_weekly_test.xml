@@ -4,74 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="@drawable/newbackground2"
     tools:context=".Weekly_Test">
 
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="#eafa1c"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="56dp"
-        tools:ignore="MissingConstraints">
-
-        <ImageView
-            android:id="@+id/backBtn"
-            android:layout_width="20dp"
-
-            android:layout_height="20dp"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="15dp"
-            android:layout_marginLeft="15dp"
-            android:src="@drawable/back1"
-            tools:ignore="MissingPrefix" />
-
-        <TextView
-            android:id="@+id/TopicName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="SelectTopicName"
-            android:textColor="#FFFFFF"
-            android:textSize="25dp"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="10dp"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <ImageView
-
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginLeft="15dp"
-                android:src="@drawable/img_31" />
-
-            <TextView
-                android:id="@+id/timer"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="260dp"
-                android:layout_marginLeft="50dp"
-                android:text="00.59"
-
-                android:textColor="#FAA724" />
-
-
-        </LinearLayout>
-
-
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/TopicName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="selected topic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="66dp" />
 
     <TextView
         android:id="@+id/question"
@@ -79,7 +23,6 @@
         android:layout_height="147dp"
         android:layout_marginStart="7dp"
         android:layout_marginLeft="7dp"
-        android:layout_marginTop="14dp"
         android:background="@drawable/round_back_light_yellow10"
         android:gravity="center"
         android:minHeight="100dp"
@@ -87,10 +30,10 @@
         android:text="Question"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        android:textStyle=""
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+        tools:layout_editor_absoluteY="130dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -167,10 +110,29 @@
         android:layout_marginTop="29dp"
         android:background="@drawable/round_back_white_stroke2"
         android:text="Option 1"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         android:textAllCaps="true"
         app:layout_constraintTop_toBottomOf="@+id/question"
         tools:ignore="HardcodedText,MissingConstraints"
         tools:layout_editor_absoluteX="24dp" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="35dp"
+        android:layout_height="34dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/hi"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="13dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

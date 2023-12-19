@@ -3,6 +3,7 @@ package com.example.health;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -21,7 +22,7 @@ public class HomeActivity extends AppCompatActivity {
         String username = sharedPreferences.getString("username", " ").toString();
         Toast.makeText(getApplicationContext(), "Welcome " +username, Toast.LENGTH_SHORT).show();
 
-        CardView exit = findViewById(R.id.cardExist);
+        CardView exit = findViewById(R.id.log_out);
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,7 +33,7 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this,LoginActivity.class));
             }
         });
-        CardView Brain_Teasure = findViewById(R.id.cardFindDoctor);
+        CardView Brain_Teasure = findViewById(R.id.brain_teasure);
         Brain_Teasure.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,22 +41,17 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this, Brain_Teasure.class));
             }
         });
-        CardView SRT = findViewById(R.id.cardLabTest);
-        SRT.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent it = new Intent(HomeActivity.this, SRT_Quizes.class);
-                startActivity(it);
-            }
-        });
-        CardView car_Race = findViewById(R.id.cardOrderDetails);
+        //CardView SRT = findViewById(R.id.srt);
+
+        CardView car_Race = findViewById(R.id.car_race);
         car_Race.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomeActivity.this,Car_Web.class));
             }
         });
-        CardView weekly_Quiz = findViewById(R.id.cardBuyMedicine);
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"})
+        CardView weekly_Quiz = findViewById(R.id.weekly_quiz);
         weekly_Quiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

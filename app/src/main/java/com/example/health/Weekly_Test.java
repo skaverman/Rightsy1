@@ -39,11 +39,11 @@ public class Weekly_Test extends AppCompatActivity {
         setContentView(R.layout.activity_weekly_test);
 
 
-        final ImageView backBtn = findViewById(R.id.backBtn);
+        final Button backBtn = findViewById(R.id.backBtn);
         // final TextView timerTextView=findViewById(R.id.timer);
 
         final TextView selectedTopicName = findViewById(R.id.TopicName);
-      //  questions = findViewById(R.id.questions);
+//        questions = findViewById(R.id.questions);
         question = findViewById(R.id.question);
         Option4 = findViewById(R.id.Option1);
         Option3= findViewById(R.id.Option2);
@@ -59,7 +59,7 @@ public class Weekly_Test extends AppCompatActivity {
         //Question ane ke liye
         questionsLists= QuestionsBank.getQuestions(getSelectedTopicname);
 
-        questions.setText((currentQuestionPosition+1)+"/"+questionsLists.size());
+//        questions.setText((currentQuestionPosition+1)+"/"+questionsLists.size());
         question.setText(questionsLists.get(0).getQuestion());
         Option1.setText(questionsLists.get(0).getOption1());
         Option2.setText(questionsLists.get(0).getOption2());
@@ -85,16 +85,14 @@ public class Weekly_Test extends AppCompatActivity {
         Option2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                if(SelectedOptionByUser.isEmpty()){
-                    SelectedOptionByUser=Option1.getText().toString();
-                    Option1.setBackgroundResource(R.drawable.round_back_red10);
-                    Option1.setTextColor(Color.WHITE);
+                if (SelectedOptionByUser.isEmpty()) {
+                    SelectedOptionByUser = Option2.getText().toString();
+                    Option2.setBackgroundResource(R.drawable.round_back_red10);
+                    Option2.setTextColor(Color.WHITE);
 
                     revealAnswer();
                     questionsLists.get(currentQuestionPosition).setUserSelectedAnswer(SelectedOptionByUser);
                 }
-
             }
         });
 
@@ -184,8 +182,8 @@ public class Weekly_Test extends AppCompatActivity {
 
         }else{
             Intent intent=new Intent(Weekly_Test.this,QuizResultActivity.class);
-          //  intent.putExtra("correct",getCorrectAnswers());
-          //  intent.putExtra("incorrect",getInCorrectAnswers());
+            //  intent.putExtra("correct",getCorrectAnswers());
+            //  intent.putExtra("incorrect",getInCorrectAnswers());
             finish();
 
         }
@@ -221,7 +219,7 @@ public class Weekly_Test extends AppCompatActivity {
 
     }
 }
-      //  startTimer(Timer);
+//  startTimer(Timer);
 
        /* private void startTimer(TextView timerTextView);
         quizTimer=new Timer();
@@ -328,4 +326,4 @@ public class Weekly_Test extends AppCompatActivity {
 
 
 
-            }*/
+            }*/

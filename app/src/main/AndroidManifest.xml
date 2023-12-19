@@ -9,9 +9,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/treeee"
-        android:label="@string/app_name"
-        android:roundIcon="@drawable/treeee"
+        android:icon="@drawable/icon"
+        android:label="Rightsy"
+        android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Health"
         tools:targetApi="31">

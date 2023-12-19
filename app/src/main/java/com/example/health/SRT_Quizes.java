@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class SRT_Quizes extends AppCompatActivity {
-    String[] Question_List ={"1.\tSituation: A 10-year-old child is found working in a local shop after school hours. What is the appropriate action?","1.\tSituation: A 10-year-old child is found working in a local shop after school hours. What is the appropriate action?",
+    String[] Question_List ={"1.\tSituation: A 10-year-old child is found working in a local shop after school hours. What is the appropriate action?","2.\tSituation: A 10-year-old child is found working in a local shop after school hours. What is the appropriate action?",
     "3.\tSituation: A 14-year-old boy is found involved in a minor theft. What legal action can be taken under the applicable law?",
     "4.\tSituation: An 11-year-old child is being denied admission to a nearby school. What should the parents do?",
     "5.\tSituation: A 12-year-old girl is found with signs of malnutrition. What is the immediate course of action?",

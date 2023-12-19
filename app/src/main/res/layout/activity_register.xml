@@ -136,13 +136,17 @@
         android:id="@+id/textViewExistingUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Already Have an Account! Login"
-        android:textColor="#f84f07"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginRight="93dp"
+        android:layout_marginBottom="19dp"
+        android:text="Login"
+        android:textColor="#04b4fb"
         android:textSize="@dimen/_13sdp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/buttonCheckout"
-        app:layout_constraintStart_toStartOf="@+id/buttonCheckout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/buttonCheckout" />
 
     <ImageView
@@ -166,6 +170,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_6" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="19dp"
+        android:text="Already have an account?"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewExistingUser"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCheckout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
