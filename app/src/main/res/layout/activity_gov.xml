@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".GovActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="413dp"
+        android:layout_height="301dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/gov"
+        tools:layout_editor_absoluteY="-3dp" />
+
+    <Button
+        android:id="@+id/govLogin1"
+
+        android:layout_width="127dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+
+        android:layout_marginTop="48dp"
+        android:background="@drawable/btn_bg"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#D66565"
+        android:textSize="15sp"
+        app:backgroundTint="#00ff0c"
+        app:layout_constraintEnd_toStartOf="@+id/govLogin2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/govLogin3" />
+
+    <Button
+        android:id="@+id/govLogin2"
+
+        android:layout_width="127dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginLeft="73dp"
+
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:background="@drawable/btn_bg"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#0659f9"
+        android:textSize="15sp"
+        app:backgroundTint="#0653e8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/govLogin1"
+        app:layout_constraintTop_toBottomOf="@+id/govLogin3" />
+
+    <EditText
+        android:id="@+id/govLogin3"
+
+        android:layout_width="130dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginLeft="133dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginRight="151dp"
+        android:background="@drawable/btn_bg"
+        android:text="     Enter id"
+
+        android:textColor="#989e8d"
+        android:textColorHint="#989e8d"
+        android:textColorLink="#989e8d"
+        android:textSize="15sp"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

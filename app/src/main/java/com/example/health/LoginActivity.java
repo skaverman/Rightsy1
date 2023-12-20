@@ -17,7 +17,7 @@ public class LoginActivity extends AppCompatActivity {
 
     EditText edUsername, edPassword;
     Button btn;
-    TextView tv;
+    TextView tv ,gov;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,15 @@ public class LoginActivity extends AppCompatActivity {
         edPassword = findViewById(R.id.editTextLoginPassword);
         btn = findViewById(R.id.buttonLogin);
         tv = findViewById(R.id.textViewNewUser);
+        gov=findViewById(R.id.govLogin);
+
+        gov.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(LoginActivity.this,GovActivity.class);
+                startActivity(i);
+            }
+        });
         
 
         btn.setOnClickListener(new View.OnClickListener() {
