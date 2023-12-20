@@ -20,7 +20,7 @@ public class ZumbleWordsActivity2 extends AppCompatActivity {
         // Enable JavaScript (optional)
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        webView.loadUrl("https://anish1279.github.io/word-scramble/");
+        webView.loadUrl("https://anish1279.github.io/work-scramble-v2/");
     }
 
     // Handle back button press to navigate back in WebView

@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back2"
-    tools:context=".QuizResultActivity">
+    tools:context=".ScoreActivity">
+
+
 
 
     <ImageView
@@ -40,26 +42,26 @@
             android:background="#FFFFFF"
             android:text="Correct Answer : 4"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/incorrectAnswer"
-                android:textSize="20dp"
-                android:background="#FFFFFF"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/incorrectAnswer"
+            android:textSize="20dp"
+            android:background="#FFFFFF"
 
-                android:layout_marginTop="5dp"
-                android:text="Wrong  Answer  : 6"
+            android:layout_marginTop="5dp"
+            android:text="Wrong  Answer  : 6"
 
 
-                android:textColor="#DD2C00"
-                android:textStyle="bold"/>
+            android:textColor="#DD2C00"
+            android:textStyle="bold"/>
 
 
 
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/StartNew"
+        android:id="@+id/StartNew1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
@@ -97,4 +99,5 @@
 
 
 </RelativeLayout >
+
 

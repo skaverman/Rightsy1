@@ -24,7 +24,7 @@ public class DetectiveWeb extends AppCompatActivity {
         // Enable JavaScript (optional)
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        webView.loadUrl("https://anish1279.github.io/memory-game/");
+        webView.loadUrl("https://anish1279.github.io/memory-game-v2/");
     }
 
     // Handle back button press to navigate back in WebView

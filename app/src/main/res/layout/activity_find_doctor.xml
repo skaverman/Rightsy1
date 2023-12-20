@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/newbackground2"
+    android:background="@drawable/back21"
     tools:context=".Brain_Teasure">
 
     <TextView
@@ -26,20 +26,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="12dp"
-        android:text="Brain_Teasure"
-        android:textColor="#fff777"
-        android:textSize="20sp"
+        android:text="Brain Teasure"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="391dp"
+        android:layout_height="441dp"
         android:layout_below="@+id/titleFindDoctor"
-        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="20dp"
         android:columnCount="2"
         android:rowCount="3">
 
@@ -67,15 +73,15 @@
                 <ImageView
                     android:layout_width="200dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/img_13" />
+                    android:src="@drawable/memory" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="DETECTIVE BRAIN"
+                    android:text="Memory"
                     android:textAlignment="center"
-                    android:textColor="@color/yellow"
+                    android:textColor="#FFFFFF"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -113,7 +119,7 @@
                     android:gravity="center"
                     android:text="@string/zumble_words"
                     android:textAlignment="center"
-                    android:textColor="@color/yellow"
+                    android:textColor="#FFFFFF"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -127,7 +133,7 @@
             android:layout_column="0"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            app:cardBackgroundColor="#ffed00"
+            app:cardBackgroundColor="#fd143b"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -140,9 +146,9 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="100dp"
+                    android:layout_width="150dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/img_15" />
+                    android:src="@drawable/suduko" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -150,7 +156,7 @@
                     android:gravity="center"
                     android:text="@string/suduko"
                     android:textAlignment="center"
-                    android:textColor="@color/yellow"
+                    android:textColor="#FFFFFF"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -187,7 +193,7 @@
                     android:gravity="center"
                     android:text="MAKE TEAM"
                     android:textAlignment="center"
-                    android:textColor="@color/yellow"
+                    android:textColor="#FFFFFF"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -216,18 +222,19 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/img_16" />
+                    android:src="@drawable/special" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="MISSING NUMBER"
+                    android:text="Special"
                     android:textAlignment="center"
-                    android:textColor="@color/yellow"
+                    android:textColor="#FFFFFF"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardFDBack"
             android:layout_width="wrap_content"
@@ -237,7 +244,7 @@
             android:layout_column="1"
             android:layout_columnWeight="1"
             android:layout_gravity="fill"
-            app:cardBackgroundColor="#3b77f3"
+            app:cardBackgroundColor="#FCD204"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp"
             app:cardUseCompatPadding="true">
@@ -260,10 +267,19 @@
                     android:gravity="center"
                     android:text="BACK"
                     android:textAlignment="center"
-                    android:textColor="@color/yellow"
+                    android:textColor="#FFFFFF"
                     android:textStyle="bold" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </GridLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="220dp"
+        android:layout_height="299dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@drawable/harry" />
 
 </RelativeLayout>

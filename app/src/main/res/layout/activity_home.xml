@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_selector"
+    android:background="@drawable/back21"
     tools:context=".HomeActivity">
 
     <GridLayout
-        android:layout_width="406dp"
-        android:layout_height="459dp"
+        android:layout_width="357dp"
+        android:layout_height="424dp"
 
         android:layout_marginStart="18dp"
         android:layout_marginLeft="18dp"
@@ -48,18 +48,19 @@
 
                 <ImageView
                     android:layout_width="107dp"
-                    android:layout_height="81dp"
+                    android:layout_height="100dp"
                     android:layout_row="1"
                     android:layout_column="0"
-                    android:src="@drawable/img_24" />
+                    android:src="@drawable/quiz1" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Weekly_Analysis"
+                    android:text="Quiz"
                     android:textAlignment="center"
-                    android:textColor="@color/Red"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -97,10 +98,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Brain_Teasure"
-                    android:textSize="25dp"
+                    android:text="Brain Teasure"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
+                    android:textSize="20dp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -132,16 +133,18 @@
                     android:layout_height="90dp"
                     android:layout_row="1"
                     android:layout_column="0"
-                    android:src="@drawable/img_20" />
+                    android:src="@drawable/carrace" />
 
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Car_Race"
+                    android:text="Car Race"
                     android:textAlignment="center"
-                    android:textColor="@color/Red"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -179,7 +182,9 @@
                     android:layout_gravity="center"
                     android:text="LogOut"
                     android:textAlignment="center"
-                    android:textColor="@color/Red"
+                    android:textColor="#FFFFFF"
+                    android:textSize="21dp"
+
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -188,9 +193,30 @@
 
     </GridLayout>
 
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="HOME"
+        android:textColor="#FFFFFF"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-
-
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="153dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dorry2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

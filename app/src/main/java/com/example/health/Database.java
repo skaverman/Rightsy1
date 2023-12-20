@@ -11,9 +11,9 @@ import androidx.annotation.Nullable;
 import java.util.ArrayList;
 
 public class Database extends SQLiteOpenHelper {
-    //private static  final String dbname = "signup.db";
+    private static  final String dbname = "signup.db";
     public Database(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, name, factory, version);
+        super(context, "signup.db", factory, version);
     }
 
     @Override

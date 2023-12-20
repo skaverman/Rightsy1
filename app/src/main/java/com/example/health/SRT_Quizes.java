@@ -76,7 +76,7 @@ public class SRT_Quizes extends AppCompatActivity {
         super.onCreate(saveInstanceState);
         setContentView(R.layout.activity_lab_test);
         srt_question=findViewById(R.id.srt_question);
-        btn_next=findViewById(R.id.btn_next);
+       // btn_next=findViewById(R.id.btn_next);
         btn_choose1=findViewById(R.id.btn_Choose1);
                 btn_choose2=findViewById(R.id.btn_Choose2);
         btn_choose3=findViewById(R.id.btn_Choose3);

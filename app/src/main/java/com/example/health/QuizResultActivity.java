@@ -23,9 +23,8 @@ public class QuizResultActivity extends AppCompatActivity {
         final TextView correctAnswer=findViewById(R.id.correctAnswers);
         @SuppressLint({"MissingInflatedId", "LocalSuppress"})
         final TextView incorrectAnswers=findViewById(R.id.incorrectAnswer);
-
-        final int getCorrectAnswers= getIntent().getIntExtra("correct", 0);
-        final int getIncorrectAnswers= getIntent().getIntExtra("incorrect", 0);
+        final int getCorrectAnswers = getIntent().getIntExtra("correct", 0);
+        final int getIncorrectAnswers = getIntent().getIntExtra("incorrect", 0);
 
         correctAnswer.setText(String.valueOf(getCorrectAnswers));
         incorrectAnswers.setText(String.valueOf(getIncorrectAnswers));
@@ -39,9 +38,10 @@ public class QuizResultActivity extends AppCompatActivity {
 
     }
 
-   /* @Override
+    @Override
     public void onBackPressed() {
-        startActivity(new Intent(QuizResultActivity.this,Weekly_Test.class));
+        super.onBackPressed();
+        startActivity(new Intent(QuizResultActivity.this, Weekly_Test.class));
         finish();
-    }*/
+    }
 }
