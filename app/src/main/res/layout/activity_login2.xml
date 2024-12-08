@@ -15,7 +15,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_5"
-        tools:layout_editor_absoluteY="-14dp" />
+        tools:layout_editor_absoluteY="-14dp"
+        tools:ignore="MissingConstraints" />
 
 
     <ImageView
@@ -90,12 +91,13 @@
         android:id="@+id/buttonLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="12dp"
         android:background="@drawable/btn_bg"
         android:text="Login"
-        android:textColorLink="#D66565"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         android:textSize="24sp"
-        app:backgroundTint="#04b4fb"
+        app:backgroundTint="#ff8c00"
         app:layout_constraintBottom_toTopOf="@+id/textViewNewUser"
         app:layout_constraintEnd_toEndOf="@+id/editTextLoginPassword"
         app:layout_constraintHorizontal_bias="0.45"
@@ -128,13 +130,13 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="175dp"
-        android:layout_height="145dp"
+        android:layout_width="201dp"
+        android:layout_height="143dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.118"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/img_26"
-        tools:ignore="DuplicateIds"
+        tools:ignore="DuplicateIds,MissingConstraints"
         tools:layout_editor_absoluteY="32dp" />
 
     <TextView
