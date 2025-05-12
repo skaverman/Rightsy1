@@ -19,8 +19,8 @@ public class QuizActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
-        final LinearLayout srt=findViewById(R.id.srt_Icon);
-        final LinearLayout weekly_test=findViewById(R.id.WeeklyTest);
+        final LinearLayout srt=findViewById(R.id.srt);
+        final LinearLayout weekly_test=findViewById(R.id.weekly);
         final ImageView imageView1=findViewById(R.id.imageView17);
         final TextView score =findViewById(R.id.score);
 

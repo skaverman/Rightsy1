@@ -6,6 +6,7 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 
 public class Brain_Teasure extends AppCompatActivity {
 
@@ -14,16 +15,17 @@ public class Brain_Teasure extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find_doctor);
 
+        // Back button functionality
         CardView exit = findViewById(R.id.cardFDBack);
         exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //startActivities(new Intent[]{new Intent(FindDoctorActivity.this, HomeActivity.class)});
-                startActivity(new Intent(Brain_Teasure.this,HomeActivity.class));
+                startActivity(new Intent(Brain_Teasure.this, HomeActivity.class));
             }
         });
 
-        CardView detective_brain = findViewById(R.id.cardFDFamilyPhysician);
+        // Detective Brain Card
+        CardView detective_brain = findViewById(R.id.detective);
         detective_brain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -32,25 +34,31 @@ public class Brain_Teasure extends AppCompatActivity {
                 startActivity(it);
             }
         });
-        CardView zumble_words = findViewById(R.id.cardFDDietician);
-        zumble_words.setOnClickListener(new View.OnClickListener() {
+
+        // Zumble Words Card
+        LinearLayout zumbleLinearLayout = findViewById(R.id.Zumble);  // No need to use LinearLayout here
+        zumbleLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(Brain_Teasure.this, ZumbleWordsActivity2.class);
-                it.putExtra("title", "zumble_words");
+                it.putExtra("title", "Zumble Words");
                 startActivity(it);
             }
         });
-        CardView suduko = findViewById(R.id.cardFDDentist);
+
+        // Sudoku Card
+        CardView suduko = findViewById(R.id.Suduko);
         suduko.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent it = new Intent(Brain_Teasure.this, SudkhoActivity.class);
-                it.putExtra("title", "suduko");
+                it.putExtra("title", "Sudoku");
                 startActivity(it);
             }
         });
-        CardView make_team = findViewById(R.id.cardFDSurgeon);
+
+        // Make Team Card
+        CardView make_team = findViewById(R.id.Team);
         make_team.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,7 +67,9 @@ public class Brain_Teasure extends AppCompatActivity {
                 startActivity(it);
             }
         });
-        CardView missing_number= findViewById(R.id.cardFDCardiologists);
+
+        // Special Card
+        CardView missing_number = findViewById(R.id.Special);
         missing_number.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

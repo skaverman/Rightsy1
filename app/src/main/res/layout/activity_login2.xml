@@ -4,42 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_selector"
+    android:background="@drawable/loginback4"
     tools:context=".LoginActivity">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="177dp"
-        android:layout_height="122dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/img_5"
-        tools:layout_editor_absoluteY="-14dp"
-        tools:ignore="MissingConstraints" />
 
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="176dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintHorizontal_bias="0.301"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/img_9" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="355dp"
-        android:layout_height="155dp"
-        android:layout_marginBottom="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextLoginUsername"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.714"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/img_11" />
 
     <EditText
         android:id="@+id/editTextLoginUsername"
@@ -57,8 +35,8 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:textColor="@color/White2"
-        android:textColorHint="@color/White2"
+        android:textColor="#fc4803"
+        android:textColorHint="#fc4803"
         app:layout_constraintBottom_toTopOf="@+id/editTextLoginPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -80,8 +58,8 @@
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
-        android:textColor="@color/White2"
-        android:textColorHint="@color/White2"
+        android:textColor="#fc4803"
+        android:textColorHint="#fc4803"
         app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
         app:layout_constraintEnd_toEndOf="@+id/editTextLoginUsername"
         app:layout_constraintHorizontal_bias="0.666"
@@ -92,12 +70,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
+        android:layout_marginRight="10dp"
         android:background="@drawable/btn_bg"
         android:text="Login"
         android:textColor="#FFFFFF"
         android:textColorLink="#FFFFFF"
         android:textSize="24sp"
-        app:backgroundTint="#ff8c00"
+        app:backgroundTint="#f96806"
         app:layout_constraintBottom_toTopOf="@+id/textViewNewUser"
         app:layout_constraintEnd_toEndOf="@+id/editTextLoginPassword"
         app:layout_constraintHorizontal_bias="0.45"
@@ -109,7 +88,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="64dp"
         android:text=" Register Now"
-        android:textColor="#FFFFFF"
+        android:textColor="#fc4803"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -117,35 +96,13 @@
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="@+id/buttonLogin" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="196dp"
-        android:layout_height="132dp"
-        android:layout_marginTop="80dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.855"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_26" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="201dp"
-        android:layout_height="143dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.118"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/img_26"
-        tools:ignore="DuplicateIds,MissingConstraints"
-        tools:layout_editor_absoluteY="32dp" />
-
     <TextView
         android:id="@+id/govLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="28dp"
         android:text=" GovernmentPortal"
-        android:textColor="#FFFFFF"
+        android:textColor="#fc4803"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

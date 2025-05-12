@@ -4,113 +4,97 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back21"
+    android:background="@drawable/quizback"
     tools:context=".QuizActivity">
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="283dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-
-        android:layout_alignParentRight="true"
-
-        android:layout_marginStart="88dp"
-        android:layout_marginLeft="88dp"
-        android:layout_marginTop="71dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_weight="1"
-        android:text="Choose Segment"
-        android:textColor="#FFFFFF"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:typeface="sans" />
 
     <LinearLayout
         android:id="@+id/LinearL2"
-        android:layout_width="330dp"
-        android:layout_height="210dp"
-        android:layout_below="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_marginTop="150dp"
-        android:layout_centerHorizontal="true"
-        android:orientation="horizontal"
-        android:weightSum="2">
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <!-- First LinearLayout - srt_Icon -->
-        <LinearLayout
-            android:id="@+id/srt_Icon"
-            android:layout_width="0dp"
-            android:layout_height="180dp"
-            android:layout_weight="1"
+        <!-- SRT Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="#fa3405"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:id="@+id/srt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="111dp"
+                    android:layout_height="135dp"
+                    android:src="@drawable/img_23" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="SRT"
+                    android:textColor="#ff4600"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Weekly Quiz Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
             android:background="#ec00ff"
-            android:gravity="center"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
 
-            android:orientation="vertical"
-            android:padding="20dp">
+            <LinearLayout
+                android:id="@+id/weekly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
 
-            <ImageView
-                android:layout_width="111dp"
-                android:layout_height="135dp"
-                android:layout_marginTop="-0.5dp"
-                android:src="@drawable/img_23" />
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/img_24" />
 
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="-10dp"
-                android:layout_marginLeft="9dp"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Weekly Quiz"
+                    android:textColor="#ff4600"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-                android:text="SRT"
-                android:textColor="#FFFFFF"
-                android:textSize="18dp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <!-- Second LinearLayout - WeeklyTest -->
-        <LinearLayout
-            android:id="@+id/WeeklyTest"
-            android:layout_width="0dp"
-            android:layout_height="180dp"
-            android:layout_weight="1"
-            android:background="#ec00ff"
-            android:layout_marginStart="5dp"
-
-            android:gravity="center"
-            android:orientation="vertical"
-            android:padding="20dp">
-
-            <ImageView
-                android:layout_width="170dp"
-                android:layout_height="150dp"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/img_24" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_marginTop="-20dp"
-                android:text="Weekly Quiz"
-                android:textColor="#FFFFFF"
-                android:textSize="18dp"
-                android:textStyle="bold" />
-        </LinearLayout>
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/StartQuiz"
-        android:layout_width="170dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginStart="130dp"
-        android:layout_marginLeft="130dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
 
         android:layout_marginEnd="110dp"
         android:layout_marginRight="110dp"
@@ -125,20 +109,10 @@
         android:textStyle="bold" />
 
     <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="296dp"
-        android:layout_height="317dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="460dp"
-        android:layout_marginEnd="115dp"
-        android:layout_marginRight="115dp"
-        app:srcCompat="@drawable/bheem" />
-
-    <ImageView
         android:id="@+id/imageView17"
-        android:layout_width="38dp"
-        android:layout_height="38dp"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         app:srcCompat="@drawable/back_back" />
 
     <TextView
@@ -148,9 +122,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginLeft="330dp"
+        android:layout_marginTop="2dp"
         android:layout_marginEnd="12dp"
         android:layout_marginRight="12dp"
-        android:layout_marginTop="10dp"
         android:text="Score"
         android:textColor="#FFFFFF"
         android:textSize="15dp"
@@ -163,8 +137,8 @@
 
 
 
-        
-        
+
+
 
 
 

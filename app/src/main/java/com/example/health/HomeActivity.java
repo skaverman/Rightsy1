@@ -33,12 +33,16 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this,LoginActivity.class));
             }
         });
-        CardView Brain_Teasure = findViewById(R.id.brain_teasure);
+        CardView Brain_Teasure = findViewById(R.id.brain_treasure);
         Brain_Teasure.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //startActivities(new Intent[]{new Intent(HomeActivity.this, FindDoctorActivity.class)});
-                startActivity(new Intent(HomeActivity.this, Brain_Teasure.class));
+                try {
+                    startActivity(new Intent(HomeActivity.this, Brain_Teasure.class));
+                } catch (Exception e) {
+                    Toast.makeText(HomeActivity.this, "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+                }
             }
         });
         //CardView SRT = findViewById(R.id.srt);
